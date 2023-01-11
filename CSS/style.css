@@ -1,0 +1,985 @@
+/*=========== General ==========*/
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: white;
+    font-family: "comfortaaregular", "helvetica", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'comfortaaregular';
+    src: url('../fonts/comfortaa-regular1-webfont.woff2') format('woff2'),
+        url('../fonts/comfortaa-regular1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'comfortaa-bold';
+    src: url('../comfortaa-bold1-webfont.woff2') format('woff2'),
+        url('../comfortaa-bold1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poetsenoneregular';
+    src: url('../fonts/poetsenone-regular-webfont.woff2') format('woff2'),
+        url('../fonts/poetsenone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoblack';
+    src: url('../fonts/lato-black-webfont.woff2') format('woff2'),
+        url('../fonts/lato-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'latoblack_italic';
+    src: url('../fonts/lato-blackitalic-webfont.woff2') format('woff2'),
+        url('../fonts/lato-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+        url('../fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'latobold_italic';
+    src: url('../fonts/lato-bolditalic-webfont.woff2') format('woff2'),
+        url('../fonts/lato-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+        url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'latosemibold';
+    src: url('../fonts/lato-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/lato-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'latosemibold_italic';
+    src: url('../fonts/lato-semibolditalic-webfont.woff2') format('woff2'),
+        url('../fonts/lato-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*=========== FIN General ==========*/
+
+
+/*=========== INDEX ===========*/
+/*=========== MOBILE ACCUEIL 320px =======*/
+
+/*---------- Menu -------*/
+@media screen and (min-width: 320px) {
+
+
+    /*#logo img {
+        width: 35%;
+        transform: translate(15%, 10px);
+    }*/
+
+    header nav ul li a {
+        color: white;
+        font-family:
+            /*"latoblack",*/
+            "poetsenoneregular", "helvetica", sans-serif;
+    }
+
+    header ul li {
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        z-index: 999;
+        height: 70px;
+        position: fixed;
+        width: 100%;
+        border-bottom: 10px solid white;
+        background-color: blueviolet;
+        box-sizing: border-box;
+    }
+
+    header img.ouvrirburger {
+        cursor: pointer;
+        width: 40px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    header img.fermerburger {
+        cursor: pointer;
+        width: 40px;
+        position: absolute;
+        top: 10px;
+        left: 19px;
+    }
+
+    header nav div#listemenu {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin-right: -155px;
+        /*display: none;*/
+        background-color: blueviolet;
+        transition: 0.8s ease;
+    }
+
+    #listemenu.ouvert {
+        /* code lié a jquery*/
+        margin-right: 0px;
+        transition: 0.8s ease;
+    }
+
+    header nav ul {
+        margin: 20px;
+        padding-top: 40px;
+    }
+
+    header nav div#logo {
+        position: absolute;
+        transform: translate(20px, 10px);
+    }
+
+    header nav div#logo img {
+        width: 70%;
+    }
+
+    /*---------- Menu fin -------*/
+
+    /*--------- Section --------*/
+    img.image100 {
+        width: 100%;
+    }
+
+    #Accueil div.texte {
+        /*font-family: "comfortaaregular", "helvetica", sans-serif;*/
+        margin: 20px auto;
+        width: 80%;
+        line-height: 24px;
+    }
+
+    #Accueil div.presentation {
+        margin-bottom: 40px;
+    }
+
+    #Accueil h1#titre1 {
+        font-family: "latoblack", "poetsenoneregular", "helvetica", sans-serif;
+        color: white;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        padding-bottom: 40px;
+        text-transform: uppercase;
+    }
+
+    #Accueil .texte div.bouton-accueil {
+        background-color: blueviolet;
+        margin: 0 auto;
+        /*width: 60%;*/
+        max-width: 200px;
+        border-radius: 50px;
+    }
+
+    #Accueil .texte div.bouton-accueil p {
+        line-height: 40px;
+        text-align: center;
+    }
+
+    #Accueil .texte p.description {
+        display: none;
+        padding-top: 20px;
+    }
+
+
+
+    #Accueil h2 {
+        font-family: "latoblack", "poetsenoneregular", "helvetica", sans-serif;
+        font-size: 22px;
+        text-align: center;
+        color: white;
+        padding-bottom: 20px;
+    }
+
+    #Accueil h3 {
+        font-family: "latoblack", "poetsenoneregular", "helvetica", sans-serif;
+        font-size: 22px;
+        text-align: center;
+        color: white;
+        padding-bottom: 20px;
+        /*padding-top: 20px;*/
+    }
+
+    /*--------- Fin Section --------*/
+
+    /*---------- Footer ------------*/
+    footer {
+        margin: 40px 0 0 0;
+        padding: 15px;
+        background-color: blueviolet;
+        font-family: "comfortaaregular", "helvetica", sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    footer p#copyright {
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+
+    footer ul li a {
+        color: white;
+    }
+
+    /*---------- Fin Footer ------------*/
+    /*=== FIN ACCUEIL MOBILE 320px =====*/
+}
+
+
+
+
+
+
+
+
+/*======== ACCUEIL TABLETTE 800px =======*/
+@media screen and (min-width: 800px) {
+
+    /*--------- menu ---------*/
+    /*--------- fin menu ---------*/
+
+
+    /*--------- section ----------*/
+    #Accueil div.texte {
+        /* font-family: "comfortaaregular", "helvetica", sans-serif;*/
+        /* margin: 20px auto;*/
+        width: 90%;
+        line-height: 24px;
+    }
+
+    #Accueil div.texteflex {
+        width: 40%;
+    }
+
+    #Accueil img.imageflex {
+        width: 50%;
+    }
+
+    #Accueil div.order3 {
+        order: 1;
+    }
+
+    #Accueil div.flexbox {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /*--------- fin section ----------*/
+
+
+    /*--------- footer ----------*/
+    footer ul li {
+        display: inline-block;
+        text-align: center;
+    }
+
+    footer ul li + li {
+        margin-left: 20px;
+    }
+
+    /*--------- fin footer ----------*/
+    /*==== FIN ACCUEIL TABLETTE 800px ===*/
+}
+
+
+
+
+
+
+
+/*=========== PC =========*/
+@media screen and (min-width: 1000px) {
+
+/*----------- menu ---------*/
+    header img.ouvrirburger {
+        display: none;
+    }
+
+    header nav div#listemenu {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin-right: 0px;
+        background-color: none;
+        transition: 0s;
+    }
+
+    #listemenu.ouvert {
+        /* code lié a jquery*/
+        margin-right: 0px;
+        transition: 0. ease;
+    }
+
+    header img.fermerburger{
+        display: none;
+    }
+
+    header nav ul {
+        margin: 0;
+        padding: 0;
+        line-height: 59px;
+    }
+
+    header ul li{
+        display: inline-block;
+        margin-bottom: 0;
+        padding-right: 100px;
+    }
+/*----------- fin menu --------*/
+
+
+/*----------- section --------*/
+
+/*----------- fin section --------*/
+
+
+/*----------- footer --------*/
+
+/*----------- fin footer --------*/
+}
+/*=========== FIN PC =========*/
+
+
+
+/*=========== FIN INDEX ===========*/
+
+
+
+
+
+
+
+
+/*======== LINEUP MOBILE 320px ========*/
+/*----------- menu ----------*/
+/*----------- fin menu ----------*/
+
+/*----------- section ----------*/
+@media screen and (min-width:320px) {
+    #Lineup {
+        padding-top: 60px;
+    }
+
+    #Lineup .image100 {
+        vertical-align: bottom;
+        /* ou margin-bottom: -4px; cacher le fond qui dépasse des images*/
+    }
+
+    #Lineup div#titre {
+        margin-top: 20px;
+    }
+
+    #Lineup div h1 {
+        text-align: center;
+        color: white;
+        font-family: "lato-black", "helvetica", sans-serif;
+    }
+
+    #Lineup .presentation {
+        width: 90%;
+        margin: 30px auto 0 auto;
+        line-height: 24px;
+    }
+
+    #Lineup .presentation p {
+        text-align: center;
+    }
+
+    #Lineup .presentation .bouton-parcours {
+        background-color: blueviolet;
+        width: 70%;
+        margin: 10px auto 0 auto;
+        border-radius: 50px;
+    }
+
+    #Lineup .presentation .bouton-parcours p {
+        line-height: 40px;
+        text-align: center;
+    }
+
+    #Lineup .presentation .afficherparcours {
+        display: none;
+        padding-bottom: 40px;
+    }
+
+    #Lineup .espacement {
+        margin: 0px 5% 50px 5%;
+        background-color: blueviolet;
+        border: 4px solid white;
+    }
+
+    #Lineup div.texte {
+        width: 95%;
+        margin: 20px auto;
+        /*padding: 20px 0 20px 0;*/
+        line-height: 24px;
+        text-align: center;
+    }
+
+    #Lineup div.aligner {
+        /*text-align: center;*/
+        /*height: 100px;*/
+    }
+
+    #Lineup div h2 {
+        font-family: "latoblack", "helvetica", sans-serif;
+        color: white;
+        letter-spacing: 0.1rem;
+        line-height: 30px;
+    }
+
+    /*----------- fin section ----------*/
+
+    /*----------- footer ----------*/
+    /*----------- fin footer ----------*/
+}
+
+/*======== FIN LINEUP MOBILE 320px ======*/
+
+
+/*======= LINEUP TABLETTE 800px ====*/
+@media screen and (min-width:800px) {
+    /*------------- menu -----------*/
+    /*------------- fin menu -----------*/
+
+    /*---------- section ----------*/
+    #Lineup div.wrapp {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #Lineup .espacement {
+        width: 40%;
+        margin: 0px auto 50px auto;
+    }
+
+    #Lineup .presentation .bouton-parcours{
+     margin-bottom: 20px;  
+    }
+    
+    #Lineup div.aligner {
+        height: 130px;
+    }
+
+    /*#Lineup .artiste {
+        max-width: 100%;
+    }*/
+
+    #Lineup .DEUXimages {
+        width: 90%;
+    }
+
+    #Lineup .duo {
+        width: 50%;
+    }
+    
+    #Lineup .duo2{
+        margin-left: -4px;
+    }
+
+    /*---------- fin section ----------*/
+
+    /*----------- footer ----------*/
+    /*----------- fin footer ----------*/
+}
+
+/*======= FIN LINEUP TABLETTE 800px ====*/
+
+
+
+
+
+/*======== MEDIAS MOBILE 320px =========*/
+/*---------- menu ___________*/
+
+/*---------- fin menu ___________*/
+
+/*----------- section ___________*/
+#Medias .galerie {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+#Medias .single-img {
+    width: 520px;
+    padding: 0 20px 20px;
+}
+
+#Medias img {
+    width: 100%;
+}
+
+/*----------- fin section -----------*/
+
+/*----------- footer -----------*/
+/*----------- fin footer -----------*/
+
+/*===== FIN MEDIAS MOBILE 320px ======*/
+
+
+/*===== RESERVATIONS MOBLIE 320px =======*/
+/*----------- menu ------------*/
+/*----------- fin menu ------------*/
+
+/*------------- section ------------*/
+@media screen and (min-width:320px) {
+    #Reservation {
+        padding-top: 130px;
+        margin: 0 auto;
+    }
+
+    #Reservation h1,
+    h2,
+    h3,
+    h4 {
+        color: white;
+        font-family: "latoblack", "helvetica", sans-serif;
+    }
+
+    #Reservation p {
+        line-height: 24px;
+    }
+
+    #Reservation .titre {
+        background-color: blueviolet;
+        height: 60px;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    #Reservation h1 {
+        padding-left: 5%;
+        font-size: 2em;
+        line-height: 60px;
+    }
+
+    #Reservation .datelieu {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #Reservation .iconeseize {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #Reservation p.seizecentrer {
+        text-align: center;
+    }
+
+    #Reservation img.seizeans {
+        /*width: 75%;*/
+        max-width: 400px;
+    }
+
+    #flexbox {
+        width: 90%;
+        max-width: 450px;
+        /**/
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #flexbox .block {
+        margin-bottom: 40px;
+        width: 100%;
+        /* margin: 0 5% 40px 5%;*/
+    }
+
+    #flexbox .cacher {
+        display: none;
+    }
+
+    #billet {
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /*grid-template-columns: repeat(auto-fill, minmax(200px 1fr));*/
+        grid-gap: 20px;
+    }
+
+    #billet div.ticket1,
+    div.ticket2,
+    div.ticket3,
+    div.ticket4 {
+        width: 90%;
+        /*max-width: 600px;*/
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    /*#billet div.ticket4 {
+        padding-bottom: 40px;
+    }*/
+
+    #billet div.texteticket1,
+    div.texteticket2,
+    div.texteticket3,
+    div.texteticket4 {
+        margin: 0 auto 20px auto;
+        max-width: 450px;
+        background-color: blueviolet;
+        height: 210px;
+        box-sizing: border-box;
+        border: 2px solid white;
+    }
+
+    #billet h4 {
+        font-size: 22px;
+        padding-top: 30px;
+        color: white;
+    }
+
+    /* #billet h4:nth-last-child(1) {
+        padding-top: 40px;
+    }*/
+
+    #billet span.prix {
+        font-size: 3.5rem;
+    }
+
+    #billet div.centrebouton {
+        margin: 0 auto;
+        width: 60%;
+        /*centrage des bouton et espace*/
+    }
+
+    #billet div:nth-last-child(1) {
+        margin-bottom: 0px;
+        /*suppresion de l'espace entre le dernier bouton et le footer*/
+    }
+
+    #billet div.centrebouton p.button {
+        height: 45px;
+        line-height: 45px;
+        font-size: 22px;
+        border-radius: 30px;
+        background-color: blueviolet;
+        border: 2px solid white;
+        color: white;
+    }
+}
+
+/*------------- fin section ----------*/
+
+/*------------- footer ----------*/
+/*------------- fin footer ----------*/
+/*==== FIN RESERVATIONS MOBILE 320px =====*/
+
+
+
+/*===== RESERVATION TABLETTE 800px =====*/
+@media screen and (min-width:800px) {
+
+    #flexbox {
+        /* max-width: 100%;*/
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1135px;
+        width: 95%;
+    }
+
+    #flexbox .block {
+        /* margin-bottom: 40px;*/
+        margin: 0 0 40px 30px;
+        width: 45%;
+    }
+
+    #flexbox :nth-child(odd) {
+        margin-right: 1%;
+    }
+
+    #billet {
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /*grid-template-columns: repeat(auto-fill, minmax(200px 1fr));*/
+        grid-gap: 20px;
+        margin: 0 auto;
+        max-width: 1235px;
+    }
+
+    #billet div.ticket3,
+    div.ticket4 {
+        margin-bottom: 0px;
+    }
+}
+
+/*------- section ----------*/
+
+/*------- fin section ----------*/
+
+
+/*--------- footer -------*/
+
+/*--------- fin footer -------*/
+
+
+/*===== FIN RESERVATION TABLETTE 800px =====*/
+
+
+
+
+
+
+
+
+
+/*========= INFOS MOBILE 320px ==========*/
+/*------------ menu -------------*/
+#Infos {
+    padding-top: 130px;
+}
+
+#Infos h1,
+h2,
+h3,
+h4 {
+    color: white;
+    font-family: "latoblack", "helvetica", sans-serif;
+}
+
+hr {
+    z-index: -1;
+    width: 90%;
+    top: 50%;
+    left: 5%;
+    position: absolute;
+    color: white;
+}
+
+#Infos h1.titre {
+    background-color: blueviolet;
+    height: 60px;
+    width: 80%;
+    margin-bottom: 40px;
+    padding-left: 5%;
+    font-size: 2em;
+    line-height: 60px;
+}
+
+#Infos div p {
+    line-height: 24px;
+}
+
+#Infos div.presentation {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#Infos div.imagecentrer {
+    text-align: center;
+    position: relative;
+}
+
+#Infos img.iconerefuser,
+img.iconevalider {
+    width: 50%;
+}
+
+#Infos div.liste-autorise {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    width: 80%;
+}
+
+#Infos div.liste-autorise ul {
+    color: white;
+    font-family: "comfortaaregular", "helvetica", sans-serif;
+    line-height: 20px;
+}
+
+#Infos div.liste-autorise ul li {
+    list-style-type: disc;
+}
+
+#Infos #flexbox {
+    margin-bottom: 40px;
+}
+
+#Infos h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#Infos div h3 {
+    font-size: 30px;
+    color: white;
+    font-family: "latoblack", "helvetica", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+input[type=text],
+textarea,
+input[type=email] {
+    color: white;
+    font-family: "comfortaaregular", "helvetica", sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+    color: black;
+}
+
+label {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+input[type=submit] {
+    background-color: #1255a2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #1872D9;
+}
+
+#Infos div.containercontact {
+    /* Ajouter box-sizing */
+    box-sizing: border-box;
+    border-radius: 5px;
+    /*background-color:#f2f2f2;*/
+    padding: 20px;
+    width: 90%;
+    /* redéfinition 400 + 2*20 */
+    max-width: 440px;
+    margin: 0 auto;
+    border: 2px solid white;
+    /* margin-bottom: 40px;*/
+}
+
+#Infos h3 {
+    color: white;
+    width: 100%;
+}
+
+/*------------ fin menu -------------*/
+
+/*------------ section -------------*/
+/*------------ fin section -------------*/
+
+/*------------ footer -------------*/
+/*------------ fin footer -------------*/
+
+/*======= FIN INFOS MOBILE 320px ========*/
+
+
+
+
+
+/*======= INFOS TABLETTE 800px ========*/
+@media screen and (min-width: 800px) {
+    #Infos #flexbox div.dates {
+        width: 100%;
+    }
+}
+
+/*------------ fin menu -------------*/
+
+/*------------ section -------------*/
+
+/*------------ fin section -------------*/
+
+
+/*------------ footer -------------*/
+/*------------ fin footer -------------*/
+/*======= FIN INFOS TABLETTE 800px ========*/
